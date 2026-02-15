@@ -28,6 +28,15 @@ const App = () => {
         >
           <Destination />
         </section>
+        <section
+          id="crew"
+          className="min-w-full h-screen snap-start bg-cover bg-center"
+          style={{
+            backgroundImage: "url('./assets/crew/background-crew-desktop.jpg')",
+          }}
+        >
+          {/* <Crew /> */}
+        </section>
       </div>
     </>
   );
