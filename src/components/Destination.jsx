@@ -14,7 +14,7 @@ const Destination = () => {
         }}
       >
         {/* Title */}
-        <div className="flex gap-2 ml-40 mt-20">
+        <div className="flex gap-2 ml-40 mt-40">
           <p className="text-gray-400">01</p>
           <h1 className="text-white">PICK YOUR DESTINATION</h1>
         </div>
@@ -24,7 +24,7 @@ const Destination = () => {
           {/* Left side - Image */}
           <img
             src="./assets/destination/image-mars.png"
-            className="w-86 h-86"
+            className="w-86 h-86 ml-5"
           />
 
           {/* Right side - Navigation and text */}
@@ -45,6 +45,24 @@ const Destination = () => {
                 tackle Olympus Mons, the tallest planetary mountain in our solar
                 system. It's two and a half times the size of Everest!
               </p>
+              <br />
+
+              {/* ❌ ERROR WAS HERE - "est. travel time" was nested INSIDE the first div */}
+              {/* ✅ FIX - Both stats are now direct children of the flex container */}
+
+              <div className="flex gap-16">
+                {/* Stat 1 */}
+                <div>
+                  <p className="text-gray-400 uppercase">avg. distance</p>
+                  <h2 className="text-2xl text-white">225 MIL. KM</h2>
+                </div>
+
+                {/* Stat 2 - was nested inside Stat 1 before! */}
+                <div>
+                  <p className="text-gray-400 uppercase">est. travel time</p>
+                  <h2 className="text-2xl text-white">9 MONTHS</h2>
+                </div>
+              </div>
             </div>
           </div>
         </div>
