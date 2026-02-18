@@ -1,9 +1,7 @@
-import Navbar from "./Navbar";
-
+import React from "react";
 const HomePage = () => {
   return (
     <>
-      <Navbar />
       <div
         className="relative w-full h-full bg-cover bg-center"
         style={{

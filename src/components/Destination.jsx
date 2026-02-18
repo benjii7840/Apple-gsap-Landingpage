@@ -1,18 +1,9 @@
 import React from "react";
-import Navbar from "./Navbar";
 
 const Destination = () => {
   return (
     <>
-      <Navbar />
-
-      <div
-        className="relative w-full h-full bg-cover bg-center"
-        style={{
-          backgroundImage:
-            "url('./assets/destination/background-destination-desktop.jpg')",
-        }}
-      >
+      <div className="relative w-full h-full bg-cover bg-center">
         {/* Title */}
         <div className="flex gap-2 ml-40 mt-20">
           <p className="text-gray-400">01</p>

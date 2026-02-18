@@ -1,6 +1,8 @@
 import Navbar from "./components/Navbar";
 import HomePage from "./components/HomePage";
 import Destination from "./components/Destination";
+import Crew from "./components/Crew";
+import Technology from "./components/Technology";
 
 const App = () => {
   return (
@@ -27,6 +29,27 @@ const App = () => {
           }}
         >
           <Destination />
+        </section>
+
+        <section
+          id="crew"
+          className="min-w-full h-screen snap-start bg-cover bg-center"
+          style={{
+            backgroundImage: "url('./assets/crew/background-crew-desktop.jpg')",
+          }}
+        >
+          <Crew />
+        </section>
+        <section
+          id="technology"
+          className="min-w-full h-screen snap-start bg-cover bg-center"
+          style={{
+            backgroundImage:
+              "url('./assets/technology/background-technology-desktop.jpg')",
+          }}
+        >
+          {/* <Technology /> */}
+          <Technology />
         </section>
       </div>
     </>
